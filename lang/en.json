@@ -1,0 +1,22 @@
+{
+  "STONEBURNER.AbilityStr": "Strength",
+  "STONEBURNER.AbilityCon": "Constitution",
+  "STONEBURNER.AbilityDex": "Dexterity",
+  "STONEBURNER.AbilityInt": "Intelligence",
+  "STONEBURNER.AbilityWis": "Wisdom",
+  "STONEBURNER.AbilityCha": "Charisma",
+
+  "STONEBURNER.AbilityStrAbbr": "str",
+  "STONEBURNER.AbilityConAbbr": "con",
+  "STONEBURNER.AbilityDexAbbr": "dex",
+  "STONEBURNER.AbilityIntAbbr": "int",
+  "STONEBURNER.AbilityWisAbbr": "wis",
+  "STONEBURNER.AbilityChaAbbr": "cha",
+
+  "STONEBURNER.EffectCreate": "Create Effect",
+  "STONEBURNER.EffectToggle": "Toggle Effect",
+  "STONEBURNER.EffectEdit": "Edit Effect",
+  "STONEBURNER.EffectDelete": "Delete Effect",
+
+  "STONEBURNER.Add": "Add"
+}
