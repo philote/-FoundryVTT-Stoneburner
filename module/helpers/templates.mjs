@@ -7,7 +7,7 @@
   return loadTemplates([
 
     // Actor partials.
-    "systems/stoneburner/templates/actor/parts/actor-features.html",
+    "systems/stoneburner/templates/actor/parts/actor-skills.html",
     "systems/stoneburner/templates/actor/parts/actor-items.html",
     "systems/stoneburner/templates/actor/parts/actor-spells.html",
     "systems/stoneburner/templates/actor/parts/actor-effects.html",
