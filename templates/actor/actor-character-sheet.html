@@ -87,30 +87,30 @@
         </div>
 
         <div class="flexcol">
-          
+          <div class="flexrow">
+            <button type="button" class="">Catch Your Breath</button>
+            <button type="button" class="">Rest</button>
+          </div>
+          {{> "systems/stoneburner/templates/actor/parts/actor-artifacts.html"}}
+          {{> "systems/stoneburner/templates/actor/parts/actor-abilities.html"}}
         </div>
       </div>
     </div>
 
-    {{!-- Biography Tab --}}
-    <div class="tab biography" data-group="primary" data-tab="description">
-      {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to the rollData property. --}}
-      {{editor system.biography target="system.biography" rollData=rollData button=true owner=owner editable=editable}}
+    {{!-- Details Tab --}}
+    <div class="tab details" data-group="primary" data-tab="details">
+      {{> "systems/stoneburner/templates/actor/parts/actor-details.html"}}
     </div>
 
-    {{!-- Owned Items Tab --}}
-    <div class="tab items" data-group="primary" data-tab="items">
-       {{> "systems/stoneburner/templates/actor/parts/actor-items.html"}}
-    </div>
-
-    {{!-- Owned Spells Tab --}}
-    <div class="tab spells" data-group="primary" data-tab="spells">
-      {{> "systems/stoneburner/templates/actor/parts/actor-spells.html"}}
-    </div>
-
-    {{!-- Active Effects Tab --}}
-    <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-      {{> "systems/stoneburner/templates/actor/parts/actor-effects.html"}}
+    {{!-- Projects & Notes Tab --}}
+    <div class="tab projects-notes" data-group="primary" data-tab="projects-notes">
+      <div class="flexrow">
+        <div class="flexcol">
+          {{> "systems/stoneburner/templates/actor/parts/actor-projects.html"}}
+        </div>
+        {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to the rollData property. --}}
+        {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
+      </div>
     </div>
 
   </section>
