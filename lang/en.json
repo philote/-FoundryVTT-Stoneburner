@@ -1,22 +1,55 @@
 {
-  "STONEBURNER.AbilityStr": "Strength",
-  "STONEBURNER.AbilityCon": "Constitution",
-  "STONEBURNER.AbilityDex": "Dexterity",
-  "STONEBURNER.AbilityInt": "Intelligence",
-  "STONEBURNER.AbilityWis": "Wisdom",
-  "STONEBURNER.AbilityCha": "Charisma",
+  "STONEBURNER.actor": {
+    "name.label": "Name:",
+    "pronouns.label": "Pronouns:",
+    "kit": {
+      "label": "Kit:",
+      "sinker.name": "Sinker (engineer)",
+      "sounder.name": "Sounder (scout)",
+      "spellwinder.name": "Spellwinder (caster)",
+      "stanchion.name": "Stanchion (guardian)"
+    },
+    "background.label": "Background:",
+    "resilience.title": "Resilience",
+    "credits.title": "Credits",
+    
+    "tabs": {
+      "skillsItems": {
+        "label": "Skills & Items"
+      },
+  
+      "details": {
+        "label": "Details"
+      },
 
-  "STONEBURNER.AbilityStrAbbr": "str",
-  "STONEBURNER.AbilityConAbbr": "con",
-  "STONEBURNER.AbilityDexAbbr": "dex",
-  "STONEBURNER.AbilityIntAbbr": "int",
-  "STONEBURNER.AbilityWisAbbr": "wis",
-  "STONEBURNER.AbilityChaAbbr": "cha",
+      "projectsNotes": {
+        "label": "Projects & Notes"
+      }
+    },
 
-  "STONEBURNER.EffectCreate": "Create Effect",
-  "STONEBURNER.EffectToggle": "Toggle Effect",
-  "STONEBURNER.EffectEdit": "Edit Effect",
-  "STONEBURNER.EffectDelete": "Delete Effect",
+    "button.catchYourBreath.label": "Catch Your Breath",
+    "button.rest.label": "Rest",
 
-  "STONEBURNER.Add": "Add"
+    "abilities.title": "Abilities",
+    "artifacts.title": "Artifacts",
+    "personalityTraits.title": "Personality Traits",
+    "bodyType.title": "Body Type",
+    "backgroundQuestions.title": "Background Questions",
+    "quirk.title": "Quirk",
+    "look.title": "Look",
+    "visionsofGlory.title": "Visions of Glory",
+    "button.AdvancementRoll.label": "Advancement Roll",
+    "facets.title": "Facets",
+    "items.title": "Items",
+    "projects.title": "Projects",
+
+    "skills": {
+      "title": "Skills",
+      "strength.label": "Strength",
+      "dexterity.label": "Dexterity",
+      "willpower.label": "Willpower",
+      "loot.label": "Loot",
+      "grit.label": "Grit"
+    }
+  }
 }

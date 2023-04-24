@@ -5,30 +5,30 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="140" width="140"/>
     <div class="header-fields">
       <h1 class="charname flexrow">
-        <label>Name:</label>
-        <input name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+        <label>{{localize "STONEBURNER.actor.name.label"}}</label>
+        <input name="name" type="text" value="{{actor.name}}"/>
         <a data-roll-type="" title="rollname" data-item-id=""><i class="fa-regular fa-dice"></i></a>
       </h1>
       <div class="flexrow">
 
         <div class="flexcol">
           <div class="flexrow">
-            <label>Pronouns:</label>
+            <label>{{localize "STONEBURNER.actor.pronouns.label"}}</label>
             <input name="pronouns" type="text" value=""/>
           </div>
   
           <div class="flexrow">
-            <label for="kits">Kit:</label>
+            <label for="kits">{{localize "STONEBURNER.actor.kit.label"}}</label>
             <select name="kits" id="kits">
-              <option value="sinker">Sinker (engineer)</option>
-              <option value="sounder">Sounder (scout)</option>
-              <option value="spellwinder">Spellwinder (caster)</option>
-              <option value="stanchion">Stanchion (guardian)</option>
+              <option value="sinker">{{localize "STONEBURNER.actor.kit.sinker.name"}}</option>
+              <option value="sounder">{{localize "STONEBURNER.actor.kit.sounder.name"}}</option>
+              <option value="spellwinder">{{localize "STONEBURNER.actor.kit.spellwinder.name"}}</option>
+              <option value="stanchion">{{localize "STONEBURNER.actor.kit.stanchion.name"}}</option>
             </select>   
           </div>
   
           <div class="flexrow">
-            <label for="backgrounds">Background:</label>
+            <label for="backgrounds">{{localize "STONEBURNER.actor.background.label"}}</label>
             <select name="backgrounds" id="backgrounds">
               <option value="teacher">Teacher</option>
               <option value="seeker">Seeker</option>
@@ -39,7 +39,7 @@
 
         <div class="flexcol">
           <div class="flexrow">
-            <span class="">Resilience</span> 
+            <span class="">{{localize "STONEBURNER.actor.resilience.title"}}</span> 
             <span class="" data-field="initial">d4</span>
             <span class="flexcol">
                 <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
@@ -55,7 +55,7 @@
           </div>
   
           <div class="flexrow">
-            <span class="">Credits</span> 
+            <span class="">{{localize "STONEBURNER.actor.credits.title"}}</span> 
             <span class="" data-field="credits">100</span>
             <span class="flexcol">
                 <a data-roll-type="stepup" data-field="credits" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
@@ -69,9 +69,9 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="skills-items">Skills & Items</a>
-    <a class="item" data-tab="details">Details</a>
-    <a class="item" data-tab="projects-notes">Projects & Notes</a>
+    <a class="item" data-tab="skills-items">{{localize "STONEBURNER.actor.tabs.skillsItems.label"}}</a>
+    <a class="item" data-tab="details">{{localize "STONEBURNER.actor.tabs.details.label"}}</a>
+    <a class="item" data-tab="projects-notes">{{localize "STONEBURNER.actor.tabs.projectsNotes.label"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -88,8 +88,8 @@
 
         <div class="flexcol">
           <div class="flexrow">
-            <button type="button" class="">Catch Your Breath</button>
-            <button type="button" class="">Rest</button>
+            <button type="button" class="">{{localize "STONEBURNER.actor.button.catchYourBreath.label"}}</button>
+            <button type="button" class="">{{localize "STONEBURNER.actor.button.rest.label"}}</button>
           </div>
           {{> "systems/stoneburner/templates/actor/parts/actor-artifacts.html"}}
           {{> "systems/stoneburner/templates/actor/parts/actor-abilities.html"}}
@@ -108,7 +108,6 @@
         <div class="flexcol">
           {{> "systems/stoneburner/templates/actor/parts/actor-projects.html"}}
         </div>
-        {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to the rollData property. --}}
         {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
       </div>
     </div>
