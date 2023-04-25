@@ -45,11 +45,26 @@
 
     "skills": {
       "title": "Skills",
-      "strength.label": "Strength",
-      "dexterity.label": "Dexterity",
-      "willpower.label": "Willpower",
-      "loot.label": "Loot",
-      "grit.label": "Grit"
+      "strength": {
+        "label": "Strength",
+        "description": "Description TBD"
+      },
+      "dexterity": {
+        "label": "Dexterity",
+        "description": "Description TBD"
+      },
+      "willpower": {
+        "label": "Willpower",
+        "description": "Description TBD"
+      },
+      "grit": {
+        "label": "Grit",
+        "description": "Description TBD"
+      },
+      "loot": {
+        "label": "Loot",
+        "description": "Description TBD"
+      }
     }
   }
 }

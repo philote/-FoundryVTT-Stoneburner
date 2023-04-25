@@ -4,10 +4,6 @@
     "templates": {
       "base": {
         "facets": [],
-        "abilities": {
-          "cost": 0,
-          "description": ""
-        },
         "notes": ""
       }
     },
@@ -28,28 +24,47 @@
       "skills": {
         "strength": {
           "initial": 0,
-          "current": 0
+          "current": 0,
+          "label": "STONEBURNER.actor.skills.strength.label",
+          "description": "STONEBURNER.actor.skills.strength.description"
         },
         "dexterity": {
           "initial": 0,
-          "current": 0
+          "current": 0,
+          "label": "STONEBURNER.actor.skills.dexterity.label",
+          "description": "STONEBURNER.actor.skills.dexterity.description"
         },
         "willpower": {
           "initial": 0,
-          "current": 0
+          "current": 0,
+          "label": "STONEBURNER.actor.skills.willpower.label",
+          "description": "STONEBURNER.actor.skills.willpower.description"
         }
       },
       "grit": {
         "initial": 0,
-        "used": false
+        "used": false,
+        "label": "STONEBURNER.actor.skills.grit.label",
+        "description": "STONEBURNER.actor.skills.grit.description"
       },
       "loot": {
         "initial": 12,
-        "current": 0
+        "current": 0,
+        "label": "STONEBURNER.actor.skills.loot.label",
+        "description": "STONEBURNER.actor.skills.loot.description"
       },
-      "items": [],
-      "abilities": [],
-      "projects": []
+      "resources": {
+        "resilience": {
+          "value": 0,
+          "max": 0
+        },
+        "credits": {
+          "value": 0,
+          "max": 0
+        }
+      },
+      "visionofGlory": "",
+      "advancementsLeft": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
     },
     "npc": {
       "templates": ["base"],
@@ -57,24 +72,29 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["gear", "ability", "project", "artifacts"],
     "templates": {
       "base": {
         "description": ""
       }
     },
-    "item": {
+    "gear": {
       "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      "initial": 0,
+      "current": 0
     },
-    "feature": {
-      "templates": ["base"]
-    },
-    "spell": {
+    "ability": {
       "templates": ["base"],
-      "spellLevel": 1
+      "cost": 0
+    },
+    "project": {
+      "templates": ["base"],
+      "initial": 0
+    },
+    "artifacts": {
+      "templates": ["base"],
+      "initial": 0,
+      "current": 0
     }
   }
 }
