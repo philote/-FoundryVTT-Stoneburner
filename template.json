@@ -3,50 +3,57 @@
     "types": ["character", "npc"],
     "templates": {
       "base": {
-        "health": {
-          "value": 10,
-          "min": 0,
-          "max": 10
-        },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
+        "facets": [],
+        "abilities": {
+          "cost": 0,
+          "description": ""
         },
         "notes": ""
       }
     },
     "character": {
       "templates": ["base"],
-      "attributes": {
-        "level": {
-          "value": 1
+      "pronouns": "",
+      "chosenKit": {
+        "id": "",
+        "chosenBackground": {
+          "id": "",
+          "answers": []
         }
       },
-      "abilities": {
-        "str": {
-          "value": 10
+      "personalityTraits": [],
+      "bodyType": "",
+      "quirk": "",
+      "look": [],
+      "skills": {
+        "strength": {
+          "initial": 0,
+          "current": 0
         },
-        "dex": {
-          "value": 10
+        "dexterity": {
+          "initial": 0,
+          "current": 0
         },
-        "con": {
-          "value": 10
-        },
-        "int": {
-          "value": 10
-        },
-        "wis": {
-          "value": 10
-        },
-        "cha": {
-          "value": 10
+        "willpower": {
+          "initial": 0,
+          "current": 0
         }
-      }
+      },
+      "grit": {
+        "initial": 0,
+        "used": false
+      },
+      "loot": {
+        "initial": 12,
+        "current": 0
+      },
+      "items": [],
+      "abilities": [],
+      "projects": []
     },
     "npc": {
       "templates": ["base"],
-      "cr": 0
+      "": ""
     }
   },
   "Item": {
