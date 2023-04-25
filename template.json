@@ -10,9 +10,9 @@
     "character": {
       "templates": ["base"],
       "pronouns": "",
-      "chosenKit": {
+      "kit": {
         "id": "",
-        "chosenBackground": {
+        "background": {
           "id": "",
           "answers": []
         }
@@ -23,33 +23,41 @@
       "look": [],
       "skills": {
         "strength": {
-          "initial": 0,
-          "current": 0,
+          "initial": "d4",
+          "current": "d4",
+          "minimum": "d4",
+          "maximum": "d12",
           "label": "STONEBURNER.actor.skills.strength.label",
           "description": "STONEBURNER.actor.skills.strength.description"
         },
         "dexterity": {
-          "initial": 0,
-          "current": 0,
+          "initial": "d4",
+          "current": "d4",
+          "minimum": "d4",
+          "maximum": "d12",
           "label": "STONEBURNER.actor.skills.dexterity.label",
           "description": "STONEBURNER.actor.skills.dexterity.description"
         },
         "willpower": {
-          "initial": 0,
-          "current": 0,
+          "initial": "d4",
+          "current": "d4",
+          "minimum": "d4",
+          "maximum": "d12",
           "label": "STONEBURNER.actor.skills.willpower.label",
           "description": "STONEBURNER.actor.skills.willpower.description"
         }
       },
       "grit": {
-        "initial": 0,
+        "initial": "d12",
         "used": false,
         "label": "STONEBURNER.actor.skills.grit.label",
         "description": "STONEBURNER.actor.skills.grit.description"
       },
       "loot": {
-        "initial": 12,
-        "current": 0,
+        "initial": "d12",
+        "current": "d12",
+        "minimum": "d4",
+        "maximum": "d12",
         "label": "STONEBURNER.actor.skills.loot.label",
         "description": "STONEBURNER.actor.skills.loot.description"
       },
@@ -59,8 +67,14 @@
           "max": 0
         },
         "credits": {
-          "value": 0,
-          "max": 0
+          "value": 0
+        },
+        "strength": {
+          "current": "d4",
+          "minimum": "d4",
+          "maximum": "d12",
+          "label": "STONEBURNER.actor.skills.strength.label",
+          "description": "STONEBURNER.actor.skills.strength.description"
         }
       },
       "visionofGlory": "",
@@ -68,11 +82,17 @@
     },
     "npc": {
       "templates": ["base"],
-      "": ""
+      "resources": {
+        "resilience": {
+          "value": 0,
+          "max": 0,
+          "min": 0
+        }
+      }
     }
   },
   "Item": {
-    "types": ["gear", "ability", "project", "artifacts"],
+    "types": ["gear", "ability", "project", "artifact"],
     "templates": {
       "base": {
         "description": ""
@@ -80,8 +100,10 @@
     },
     "gear": {
       "templates": ["base"],
-      "initial": 0,
-      "current": 0
+      "initial": "d6",
+      "current": "d6",
+      "minimum": "d6",
+      "maximum": "d12"
     },
     "ability": {
       "templates": ["base"],
@@ -89,12 +111,16 @@
     },
     "project": {
       "templates": ["base"],
-      "initial": 0
+      "initial": "d4",
+      "minimum": "d4",
+      "maximum": "d12"
     },
-    "artifacts": {
+    "artifact": {
       "templates": ["base"],
-      "initial": 0,
-      "current": 0
+      "initial": "d4",
+      "current": "d4",
+      "minimum": "d4",
+      "maximum": "d12"
     }
   }
 }
