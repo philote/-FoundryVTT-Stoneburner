@@ -1,11 +1,5 @@
 .sheet-header {
   flex: 0 auto;
-
-  .profile-img {
-    flex: 0 0 140px;
-    height: 140px;
-    margin-right: 10px;
-  }
 }
 
 .sheet-tabs {
@@ -16,4 +10,37 @@
 .sheet-body .tab,
 .sheet-body .tab .editor {
   height: 100%;
+}
+
+.character {
+
+ .sheet-header {
+
+  .profile-img {
+    flex: 0 0 140px;
+    height: 140px;
+    margin-right: 10px;
+  }
+
+  .header-fields {
+
+    .charname {
+      align-items: center;
+
+      label {
+        flex-grow:0
+      }
+
+      a {
+        flex-grow:0
+      }
+
+      input {
+        width: 100%;
+        
+      }
+    }
+  }
+ }
+
 }
