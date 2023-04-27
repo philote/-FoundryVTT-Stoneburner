@@ -25,19 +25,29 @@
   .header-fields {
 
     .charname {
-      align-items: center;
+      align-items: baseline;
+      margin: 0 0 10px 0;
 
       label {
-        flex-grow:0
+        flex-grow:0;
+        border-bottom: 2px solid black;
+        text-transform: uppercase;
       }
 
       a {
-        flex-grow:0
+        flex-grow:0;
       }
 
       input {
+        height: 100%;
         width: 100%;
-        
+        padding: 0 0 0 6px;
+        margin: 0;
+        background: none;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid black;
       }
     }
   }
