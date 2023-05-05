@@ -1,68 +1,111 @@
-<h2>{{localize "STONEBURNER.actor.skills.title"}}</h2>
-<div class="flexrow">
-  <span class="">{{localize "STONEBURNER.actor.skills.strength.label"}}</span> 
-  <span class="" data-field="initial">d4</span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-  <span class="">
-      <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
-  </span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-</div>
+<div class="flexcol body-section">
+  <h2>{{localize "STONEBURNER.actor.skills.title"}}</h2>
 
-<div class="flexrow">
-  <span class="">{{localize "STONEBURNER.actor.skills.dexterity.label"}}</span> 
-  <span class="" data-field="initial">d4</span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-  <span class="">
-      <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
-  </span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-</div>
+  <div class="grid grid-3col counter">
+    <label>{{localize "STONEBURNER.actor.skills.strength.label"}}</label> 
+    
+    <div class="flexrow initial">
+      <div class="dice" data-field="initial">
+        d4
+      </div>
+      <span class="flexcol steppers">
+          <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+          <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+      </span>
+    </div>
 
-<div class="flexrow">
-  <span class="">{{localize "STONEBURNER.actor.skills.willpower.label"}}</span> 
-  <span class="" data-field="initial">d4</span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-  <span class="">
-      <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
-  </span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-</div>
+    <div class="flexrow current">
+      <div class="dice">
+        <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
+      </div>
+      <span class="flexcol steppers">
+        <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+        <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+      </span>
+    </div>
+  </div>
 
-<div class="flexrow">
-  <span class="">{{localize "STONEBURNER.actor.skills.loot.label"}}</span> 
-  <span class="" data-field="initial">d12</span>
-  <span class="">
-      <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
-  </span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-</div>
+  <div class="grid grid-3col counter">
+    <label>{{localize "STONEBURNER.actor.skills.dexterity.label"}}</label> 
+    
+    <div class="flexrow initial">
+      <div class="dice" data-field="initial">
+        d4
+      </div>
+      <span class="flexcol steppers">
+          <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+          <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+      </span>
+    </div>
 
-<div class="flexrow">
-  <span class="">{{localize "STONEBURNER.actor.skills.grit.label"}}</span>
-  <span class="" data-field="initial">d12</span>
-  <span class="">
-    <input type="checkbox" id="grit" name="grit" value="grit-used">
-  </span>
+    <div class="flexrow current">
+      <div class="dice">
+        <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
+      </div>
+      <span class="flexcol steppers">
+        <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+        <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+      </span>
+    </div>
+  </div>
+
+  <div class="grid grid-3col counter">
+    <label>{{localize "STONEBURNER.actor.skills.willpower.label"}}</label> 
+    
+    <div class="flexrow initial">
+      <div class="dice" data-field="initial">
+        d4
+      </div>
+      <span class="flexcol steppers">
+          <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+          <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+      </span>
+    </div>
+
+    <div class="flexrow current">
+      <div class="dice">
+        <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
+      </div>
+      <span class="flexcol steppers">
+        <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+        <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+      </span>
+    </div>
+  </div>
+
+  <div class="grid grid-3col counter">
+    <label>{{localize "STONEBURNER.actor.skills.loot.label"}}</label> 
+    
+    <div class="flexrow initial">
+      <div class="dice" data-field="initial">
+        d12
+      </div>
+    </div>
+
+    <div class="flexrow current">
+      <div class="dice">
+        <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
+      </div>
+      <span class="flexcol steppers">
+        <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+        <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+      </span>
+    </div>
+  </div>
+
+  <div class="grid grid-3col counter">
+    <label>{{localize "STONEBURNER.actor.skills.grit.label"}}</label> 
+    
+    <div class="flexrow initial">
+      <div class="dice" data-field="initial">
+        d12
+      </div>
+    </div>
+
+    <div class="flexrow current">
+      <div class="dice">
+        <input type="checkbox" id="grit" name="grit" value="grit-used">
+      </div>
+    </div>
+  </div>
 </div>
