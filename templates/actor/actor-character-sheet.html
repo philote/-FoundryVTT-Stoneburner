@@ -38,28 +38,23 @@
         </div>
 
         <div class="flexcol header-right-group">
-          <div class="flexrow header-group counter">
-            <label>{{localize "STONEBURNER.actor.resilience.title"}}</label> 
-            
-            <div class="flexrow initial">
-              <div class="dice" data-field="initial">
-                d4
-              </div>
-              <span class="flexcol steppers">
-                  <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-                  <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-              </span>
-            </div>
 
-            <div class="flexrow current">
-              <div class="dice">
-                <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
-              </div>
-              <span class="flexcol steppers">
-                <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-                <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-              </span>
+          <div class="roll-box flexrow">
+            <span class="roll-box-label">{{localize "STONEBURNER.actor.resilience.title"}}</span>
+            
+            <div class="dice initial" data-field="initial">d4</div>
+            <span class="flexcol steppers">
+                <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+                <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+            </span>
+          
+            <div class="dice current">
+              <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
             </div>
+            <span class="flexcol steppers roll-box-end">
+              <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+              <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+            </span>
           </div>
   
           <div class="flexrow header-group counter">
