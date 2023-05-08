@@ -1,34 +1,47 @@
-<h2>{{localize "STONEBURNER.actor.artifacts.title"}}</h2>
-<div class="flexrow">
-  <input type="checkbox" id="" name="" value="">
-  <input name="" type="text" value="Artifact One"/>
-  <span class="" data-field="initial">d4</span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-  <span class="">
-      <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
-  </span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-</div>
+<div class="flexcol artifacts">
+    <h2>{{localize "STONEBURNER.actor.artifacts.title"}}</h2>
+  
+    <div class="roll-box flexrow">
+        <div class="artifact-check roll-box-start">
+            <input type="checkbox" id="" name="" value=""/>
+        </div>
 
-<div class="flexrow">
-  <input type="checkbox" id="" name="" value="">
-  <input name="" type="text" value="Artifact Two"/>
-  <span class="" data-field="initial">d4</span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
-  <span class="">
-      <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
-  </span>
-  <span class="flexcol">
-      <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-      <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-  </span>
+        <input class="roll-box-label" name="" type="text" value="Artifact One"/>
+    
+        <div class="dice initial" data-field="initial">d4</div>
+        <span class="flexcol steppers">
+            <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+            <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+        </span>
+        
+        <div class="dice current">
+            <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
+        </div>
+        <span class="flexcol steppers roll-box-end">
+            <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+            <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+        </span>
+    </div>
+
+    <div class="roll-box flexrow">
+        <div class="artifact-check roll-box-start">
+            <input type="checkbox" id="" name="" value=""/>
+        </div>
+
+        <input class="roll-box-label" name="" type="text" value="Artifact Two"/>
+    
+        <div class="dice initial" data-field="initial">d4</div>
+        <span class="flexcol steppers">
+            <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+            <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+        </span>
+        
+        <div class="dice current">
+            <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
+        </div>
+        <span class="flexcol steppers roll-box-end">
+            <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+            <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+        </span>
+    </div>
 </div>

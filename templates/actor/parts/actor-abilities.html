@@ -1,23 +1,28 @@
-<div class="flexcol">
-  <div class="flexrow">
-    <button type="button" class="" data-roll-type="ability-create" data-type="ability"><i class="fas fa-plus-square"></i></button>
+<div class="flexcol abilities">
+  <div class="flexrow item-section-header">
+    <button type="button" class="on-click" data-roll-type="item-create" data-type="item"><i class="fas fa-plus-square"></i></button>
     <h2>{{localize "STONEBURNER.actor.abilities.title"}}</h2>
   </div>
 
-  <div class="flexrow">
-    <input name="" type="text" value="New Ability"/>
-    <span class="flexcol flex0">
+  <div class="roll-box flexrow">
+    <input class="roll-box-label roll-box-start" name="" type="text" value="New Ability"/>
+  
+    <div class="ability-bolt">
       <a class="" data-roll-type="" title="" data-item-id=""><i class="fa-solid fa-bolt"></i></a>
+    </div>
+
+    <div class="dice current">
+      <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">3</a>
+    </div>
+    <span class="flexcol steppers">
+      <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+      <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
     </span>
-    <span class="">
-        100
-    </span>
-    <span class="flexcol">
-        <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-        <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-    </span>
-    <span class="flexcol flex0">
-      <a class="" data-roll-type="ability-delete" title="Delete" data-item-id=""><i class="fa-solid fa-xmark"></i></a>
+
+    <span class="flexcol steppers roll-box-end item-edit">
+      <a class="" data-roll-type="item-edit" title="Edit" data-item-id=""><i class="fa-solid fa-pencil"></i></a>
+      <a class="" data-roll-type="item-delete" title="Delete" data-item-id=""><i class="fa-solid fa-xmark"></i></a>
     </span>
   </div>
+
 </div>

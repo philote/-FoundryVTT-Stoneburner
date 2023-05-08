@@ -33,29 +33,66 @@ h2 {
   height: 40px;
 }
 
-.body-section {
-  margin-bottom: 20px;
-}
+.character {
 
-.character { 
+  .abilities, 
+  .artifacts,
+  .rest-actions,
+  .items {
+    flex: none;
+    margin-top: 20px;
+  }
+
+  .rest-actions {
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px 10px 10px;
+    border-bottom: 2px solid black;
+  }
 
   .item-section-header {
-    @include csh_font();
-    margin-bottom: 5px;
-    padding-top: 10px;
+    align-items: center;
+
+    h2 {
+      margin: 0;
+    }
 
     button {
         @include button_reset();
+        flex: none;
         color: #beb19b;
         font-size: 2em;
     }
   }
+
+  .artifacts .roll-box input[type=text].roll-box-label {
+    padding: 0;
+    border-left: none;
+  } 
 
   .roll-box {
     font-family: $font-secondary;
     align-items: center;
     padding: 0;
     margin-bottom: 10px;
+
+    .artifact-check {
+      border-bottom: 2px solid black;
+      border-top: 2px solid black;
+      height: 40px;
+      flex: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .ability-bolt {
+      padding: 0 10px 0 10px;
+      border-bottom: 2px solid black;
+      border-top: 2px solid black;
+      height: 40px;
+      flex: none;
+      display: flex;
+      align-items: center;
+    }
   
     input[type=text].roll-box-label,
     .roll-box-label {
@@ -64,7 +101,6 @@ h2 {
       margin: 5px 0px 5px 0px;
       border-bottom: 2px solid black;
       border-top: 2px solid black;
-      border-left: 2px solid black;
       height: 40px;
       display: flex;
       align-items: center;
@@ -135,13 +171,17 @@ h2 {
     }
 
     .item-edit {
-      padding: 0 10px 0 5px
+      padding: 0 5px 0 5px
     }
 
     .no-steppers {
       padding: 0 20px 0 5px;
     }
   
+    .roll-box-start {
+      border-left: 2px solid black;
+    }
+    
     .roll-box-end {
       border-right: 2px solid black;
     }
@@ -154,13 +194,6 @@ h2 {
       background-color: rgba(255, 255, 255, 0.174);
     }
     
-    input[type=text] {
-      border-radius: 5px;
-      border: 2px solid black;
-      margin: 2px 6px 2px 6px;
-      width: 100%;
-      text-align: center;
-    }
   }
 
  .sheet-header {
@@ -243,7 +276,7 @@ h2 {
     
       .dice {
         height: 40px;
-        width: 30px;
+        width: 40px;
       }
     
       .steppers {
@@ -256,7 +289,7 @@ h2 {
         border: 2px solid black;
         margin: 0 0 0 0;
         height: 50px;
-        width: 88px;
+        width: 105px;
         text-align: center;
         display: flex;
         align-items: center;

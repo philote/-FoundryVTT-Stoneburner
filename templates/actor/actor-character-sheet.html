@@ -40,7 +40,7 @@
         <div class="flexcol header-right-group">
 
           <div class="roll-box flexrow">
-            <span class="roll-box-label">{{localize "STONEBURNER.actor.resilience.title"}}</span>
+            <span class="roll-box-label roll-box-start">{{localize "STONEBURNER.actor.resilience.title"}}</span>
             
             <div class="dice initial" data-field="initial">d4</div>
             <span class="flexcol steppers">
@@ -58,7 +58,7 @@
           </div>
 
           <div class="roll-box flexrow">
-            <span class="roll-box-label">{{localize "STONEBURNER.actor.credits.title"}}</span>
+            <span class="roll-box-label roll-box-start">{{localize "STONEBURNER.actor.credits.title"}}</span>
             
             <input data-field="credits" name="credits" type="number" value="{{system.credits}}"/>
             <span class="flexcol steppers roll-box-end">
@@ -88,12 +88,11 @@
       <div class="flexrow">
         <div class="flexcol left-column">
           {{> "systems/stoneburner/templates/actor/parts/actor-skills.html"}}
-          
           {{> "systems/stoneburner/templates/actor/parts/actor-items.html"}}
         </div>
 
         <div class="flexcol right-column">
-          <div class="flexrow">
+          <div class="flexrow rest-actions">
             <button type="button" class="">{{localize "STONEBURNER.actor.button.catchYourBreath.label"}}</button>
             <button type="button" class="">{{localize "STONEBURNER.actor.button.rest.label"}}</button>
           </div>
