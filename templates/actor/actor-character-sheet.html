@@ -56,14 +56,17 @@
               <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
             </span>
           </div>
-  
-          <div class="flexrow header-group counter">
-            <label>{{localize "STONEBURNER.actor.credits.title"}}</label> 
-            <input data-field="credits" name="credits" type="text" value="{{system.credits}}"/>
-            <span class="flexcol steppers">
+
+          <div class="roll-box flexrow">
+            <span class="roll-box-label">{{localize "STONEBURNER.actor.credits.title"}}</span>
+            
+            <input data-field="credits" name="credits" type="number" value="{{system.credits}}"/>
+            <span class="flexcol steppers roll-box-end">
                 <a data-roll-type="stepup" data-field="credits" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
                 <a data-roll-type="stepdown" data-field="credits" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
             </span>
+          </div>
+  
         </div>
 
       </div>

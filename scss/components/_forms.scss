@@ -39,12 +39,25 @@ h2 {
 
 .character { 
 
+  .item-section-header {
+    @include csh_font();
+    margin-bottom: 5px;
+    padding-top: 10px;
+
+    button {
+        @include button_reset();
+        color: #beb19b;
+        font-size: 2em;
+    }
+  }
+
   .roll-box {
     font-family: $font-secondary;
     align-items: center;
     padding: 0;
     margin-bottom: 10px;
   
+    input[type=text].roll-box-label,
     .roll-box-label {
       background-color: transparent;
       padding: 0 0 0 10px;
@@ -56,6 +69,12 @@ h2 {
       display: flex;
       align-items: center;
     }
+    
+    input[type=text].roll-box-label {
+      border-radius: 0;
+      border-right: none;
+      text-align: start;
+    }
   
     .dice {
       border-radius: 5px;
@@ -63,6 +82,32 @@ h2 {
       margin: 0 0 0 0;
       height: 50px;
       width: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: none;
+    }
+
+    .dice {
+      border-radius: 5px;
+      border: 2px solid black;
+      margin: 0 0 0 0;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: none;
+    }
+
+    input[type=text] .num_input {
+      border-radius: 5px;
+      border: 2px solid black;
+      margin: 0 0 0 0;
+      height: 50px;
+      width: 88px;
       text-align: center;
       display: flex;
       align-items: center;
@@ -88,6 +133,14 @@ h2 {
         vertical-align: middle;
       }
     }
+
+    .item-edit {
+      padding: 0 10px 0 5px
+    }
+
+    .no-steppers {
+      padding: 0 20px 0 5px;
+    }
   
     .roll-box-end {
       border-right: 2px solid black;
@@ -111,31 +164,6 @@ h2 {
   }
 
  .sheet-header {
-
-  .roll-box {
-    padding: 0;
-    margin-bottom: 10px;
-  
-    .roll-box-label {
-      padding: 0 0 0 10px;
-      margin: 5px 0px 5px 0px;
-      height: 30px;
-    }
-  
-    .dice {
-      margin: 0 0 0 0;
-      height: 40px;
-      width: 30px;
-    }
-  
-    .steppers {
-      padding: 0 10px 0 5px;
-      margin: 5px 0px 5px 0px;
-      height: 30px;
-      font-size: small;
-    }
-  
-  }
 
   label {
     flex-grow:0;
@@ -205,8 +233,37 @@ h2 {
       // input {
 
       // }
+    }
 
+    .roll-box {
+    
+      .roll-box-label {
+        height: 30px;
+      }
+    
+      .dice {
+        height: 40px;
+        width: 30px;
+      }
+    
+      .steppers {
+        height: 30px;
+        font-size: small;
+      }
 
+      input[type=number] {
+        border-radius: 5px;
+        border: 2px solid black;
+        margin: 0 0 0 0;
+        height: 50px;
+        width: 88px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+      }
+    
     }
   }
  }

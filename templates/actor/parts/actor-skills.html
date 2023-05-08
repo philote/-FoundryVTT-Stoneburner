@@ -21,39 +21,32 @@
     </div>
   {{/each}}
 
-  <div class="grid grid-3col counter">
-    <label>{{localize "STONEBURNER.actor.skills.loot.label"}}</label> 
+  <div class="roll-box flexrow">
+    <span class="roll-box-label">{{localize "STONEBURNER.actor.skills.loot.label"}}</span>
     
-    <div class="flexrow initial">
-      <div class="dice" data-field="initial">
-        d12
-      </div>
-    </div>
+    <div class="dice initial" data-field="initial">d12</div>
+    <span class="steppers no-steppers"></span>
 
-    <div class="flexrow current">
-      <div class="dice">
-        <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
-      </div>
-      <span class="flexcol steppers">
-        <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
-        <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
-      </span>
+    <div class="dice current">
+      <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
     </div>
+    <span class="flexcol steppers roll-box-end">
+      <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
+      <a data-roll-type="stepdown" data-field="current" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
+    </span>
   </div>
 
-  <div class="grid grid-3col counter">
-    <label>{{localize "STONEBURNER.actor.skills.grit.label"}}</label> 
+  <div class="roll-box flexrow">
+    <span class="roll-box-label">{{localize "STONEBURNER.actor.skills.grit.label"}}</span>
     
-    <div class="flexrow initial">
-      <div class="dice" data-field="initial">
-        d12
-      </div>
+    <div class="dice initial" data-field="initial">d12</div>
+    <span class="steppers no-steppers"></span>
+
+    <div class="dice current">
+      <input type="checkbox"/>
     </div>
 
-    <div class="flexrow current">
-      <div class="dice">
-        <input type="checkbox" id="grit" name="grit" value="grit-used">
-      </div>
-    </div>
+    <span class="steppers roll-box-end no-steppers"></span>
   </div>
+
 </div>
