@@ -10,11 +10,33 @@
     "character": {
       "templates": ["base"],
       "pronouns": "",
-      "kit": {
-        "id": "",
-        "background": {
-          "id": "",
+      "kits": {
+        "current": "",
+        "currentBackground": {
+          "name": "",
           "answers": []
+        },
+        "options": {
+          "sinker": {
+            "label": "STONEBURNER.actor.kit.sinker.name",
+            "backgrounds": {
+              "<bg>": {
+                "label": "<string>",
+                "questions": {
+                  "<name>": "<string>"
+                }
+              } 
+            }
+          },
+          "sounder": {
+            "label": "STONEBURNER.actor.kit.sounder.name"
+          },
+          "spellwinder": {
+            "label": "STONEBURNER.actor.kit.spellwinder.name"
+          },
+          "stanchion": {
+            "label": "STONEBURNER.actor.kit.stanchion.name"
+          }
         }
       },
       "personalityTraits": [],
@@ -64,17 +86,11 @@
       "resources": {
         "resilience": {
           "value": 0,
-          "max": 0
+          "max": 0,
+          "vulnerable": false
         },
         "credits": {
           "value": 0
-        },
-        "strength": {
-          "current": "d4",
-          "minimum": "d4",
-          "maximum": "d12",
-          "label": "STONEBURNER.actor.skills.strength.label",
-          "description": "STONEBURNER.actor.skills.strength.description"
         }
       },
       "visionofGlory": "",
@@ -120,7 +136,8 @@
       "initial": "d4",
       "current": "d4",
       "minimum": "d4",
-      "maximum": "d12"
+      "maximum": "d12",
+      "used": false
     }
   }
 }

@@ -13,20 +13,22 @@
 
         <div class="flexcol header-left-group">
           <div class="flexrow header-group">
-            <label class="with_input">{{localize "STONEBURNER.actor.pronouns.label"}}</label>
-            <input name="pronouns" type="text" value=""/>
+            <label for="pronouns" class="with_input">{{localize "STONEBURNER.actor.pronouns.label"}}</label>
+            <input id="pronouns" name="system.pronouns" type="text" value="{{system.pronouns}}"/>
           </div>
   
           <div class="flexrow header-group">
             <label for="kits">{{localize "STONEBURNER.actor.kit.label"}}</label>
-            <select name="kits" id="kits">
-              <option value="sinker">{{localize "STONEBURNER.actor.kit.sinker.name"}}</option>
-              <option value="sounder">{{localize "STONEBURNER.actor.kit.sounder.name"}}</option>
-              <option value="spellwinder">{{localize "STONEBURNER.actor.kit.spellwinder.name"}}</option>
-              <option value="stanchion">{{localize "STONEBURNER.actor.kit.stanchion.name"}}</option>
+            <select name="system.kits.current" id="kits" data-type="String">
+              {{#select system.kits.current}}
+                {{#each system.kits.options as |option key|}}
+                  <option  value="{{key}}">{{localize option.label}}</option>
+                {{/each}}
+              {{/select}}
             </select>   
           </div>
-  
+          
+          {{!-- Todo will need some JS processing based on currently selected kit --}}
           <div class="flexrow header-group">
             <label for="backgrounds">{{localize "STONEBURNER.actor.background.label"}}</label>
             <select name="backgrounds" id="backgrounds">
@@ -39,17 +41,18 @@
 
         <div class="flexcol header-right-group">
 
+          {{!-- Need to as vulnerable state UI --}}
           <div class="roll-box flexrow">
             <span class="roll-box-label roll-box-start">{{localize "STONEBURNER.actor.resilience.title"}}</span>
             
-            <div class="dice initial" data-field="initial">d4</div>
+            <div class="dice initial" data-field="initial">{{system.resources.resilience.max}}</div>
             <span class="flexcol steppers">
                 <a data-roll-type="stepup" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
                 <a data-roll-type="stepdown" data-field="initial" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
             </span>
           
             <div class="dice current">
-              <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">d4</a>
+              <a data-roll-type="roll-dice" data-field="system.current" data-item-id="">{{system.resources.resilience.value}}</a>
             </div>
             <span class="flexcol steppers roll-box-end">
               <a data-roll-type="stepup" data-field="current" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
@@ -60,7 +63,7 @@
           <div class="roll-box flexrow">
             <span class="roll-box-label roll-box-start">{{localize "STONEBURNER.actor.credits.title"}}</span>
             
-            <input data-field="credits" name="credits" type="number" value="{{system.credits}}"/>
+            <input data-field="credits" name="credits" type="number" value="{{system.resources.credits.value}}"/>
             <span class="flexcol steppers roll-box-end">
                 <a data-roll-type="stepup" data-field="credits" data-item-id=""><i class="fa-solid fa-caret-up"></i></a>
                 <a data-roll-type="stepdown" data-field="credits" data-item-id=""><i class="fa-solid fa-caret-down"></i></a>
