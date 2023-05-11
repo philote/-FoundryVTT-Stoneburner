@@ -17,7 +17,7 @@
             <input id="pronouns" name="system.pronouns" type="text" value="{{system.pronouns}}"/>
           </div>
   
-          <div class="flexrow header-group">
+          {{!-- <div class="flexrow header-group">
             <label for="kits">{{localize "STONEBURNER.actor.kit.label"}}</label>
             <select name="system.kits.current" id="kits" data-type="String">
               {{#select system.kits.current}}
@@ -26,12 +26,23 @@
                 {{/each}}
               {{/select}}
             </select>   
+          </div> --}}
+          
+          <div class="flexrow header-group">
+            <label for="kits">{{localize "STONEBURNER.actor.kit.label"}}</label>
+            <select name="system.kits.current" id="kits" data-type="String">
+              {{!-- Todo will need some JS processing based on what kits are available --}}
+              <option value="sinker">{{localize "STONEBURNER.actor.kit.sinker.name"}}</option>
+              <option value="sounder">{{localize "STONEBURNER.actor.kit.sounder.name"}}</option>
+              <option value="spellwinder">{{localize "STONEBURNER.actor.kit.spellwinder.name"}}</option>
+              <option value="stanchion">{{localize "STONEBURNER.actor.kit.stanchion.name"}}</option>
+            </select>   
           </div>
           
           {{!-- Todo will need some JS processing based on currently selected kit --}}
           <div class="flexrow header-group">
             <label for="backgrounds">{{localize "STONEBURNER.actor.background.label"}}</label>
-            <select name="backgrounds" id="backgrounds">
+            <select name="system.kits.chosenBackground.name" id="backgrounds" data-type="String">
               <option value="teacher">Teacher</option>
               <option value="seeker">Seeker</option>
               <option value="broken">Broken</option>

@@ -10,39 +10,19 @@
     "character": {
       "templates": ["base"],
       "pronouns": "",
-      "kits": {
-        "current": "",
-        "currentBackground": {
+      "kit": {
+        "chosenKit": "",
+        "chosenBackground": {
           "name": "",
           "answers": []
         },
-        "options": {
-          "sinker": {
-            "label": "STONEBURNER.actor.kit.sinker.name",
-            "backgrounds": {
-              "<bg>": {
-                "label": "<string>",
-                "questions": {
-                  "<name>": "<string>"
-                }
-              } 
-            }
-          },
-          "sounder": {
-            "label": "STONEBURNER.actor.kit.sounder.name"
-          },
-          "spellwinder": {
-            "label": "STONEBURNER.actor.kit.spellwinder.name"
-          },
-          "stanchion": {
-            "label": "STONEBURNER.actor.kit.stanchion.name"
-          }
-        }
+        "chosenAdvancements": []
       },
       "personalityTraits": [],
       "bodyType": "",
       "quirk": "",
       "look": [],
+      "visionofGlory": "",
       "skills": {
         "strength": {
           "initial": "d4",
@@ -92,9 +72,7 @@
         "credits": {
           "value": 0
         }
-      },
-      "visionofGlory": "",
-      "advancementsLeft": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+      }
     },
     "npc": {
       "templates": ["base"],
