@@ -34,10 +34,8 @@ h2 {
 }
 
 .character {
-
-  .abilities, 
-  .artifacts,
-  .rest-actions,
+ 
+  .section-top,
   .items {
     flex: none;
     margin-top: 20px;
@@ -196,109 +194,159 @@ h2 {
     
   }
 
- .sheet-header {
+  .sheet-header {
 
-  label {
-    flex-grow:0;
-    font-family: $font-secondary;
-    display: flex;
-    align-items: center;
-  }
-
-  .profile-img {
-    flex: 0 0 140px;
-    height: 140px;
-    margin-right: 10px;
-  }
-
-  .header-fields {
-
-    .header-group {
-      margin: 5px 0px 5px 0;
-    }
-
-    .header-left-group {
-      margin-right: 5px;
-    }
-
-    .header-right-group {
-      margin-left: 5px;
-    }
-
-    label.with_input {
-      height: 100%;
+    label {
       flex-grow:0;
-      border-bottom: 2px solid black;
       font-family: $font-secondary;
+      display: flex;
+      align-items: center;
     }
 
+    .profile-img {
+      flex: 0 0 140px;
+      height: 140px;
+      margin-right: 10px;
+    }
+
+    .header-fields {
+
+      .header-group {
+        margin: 5px 0px 5px 0;
+      }
+
+      .header-left-group {
+        margin-right: 5px;
+      }
+
+      .header-right-group {
+        margin-left: 5px;
+      }
+
+      label.with_input {
+        height: 100%;
+        flex-grow:0;
+        border-bottom: 2px solid black;
+        font-family: $font-secondary;
+      }
+
+      input[type=text] {
+        height: 100%;
+        width: 100%;
+        padding: 0 6px 0 6px;
+        margin: 0;
+        background: none;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid black;
+      }
+
+      select {
+        margin-left: 6px;
+      }
+
+      .charname {
+        align-items: flex-end;
+        margin: 0 0 10px 0;
+        height: 30px;
+
+        // label {
+
+        // }
+
+        a {
+          flex-grow:0;
+          font-size: 20px;
+          margin: 0 10px 0 10px;;
+        }
+
+        // input {
+
+        // }
+      }
+
+      .roll-box {
+      
+        .roll-box-label {
+          height: 30px;
+        }
+      
+        .dice {
+          height: 40px;
+          width: 40px;
+        }
+      
+        .steppers {
+          height: 30px;
+          font-size: small;
+        }
+
+        input[type=number] {
+          border-radius: 5px;
+          border: 2px solid black;
+          margin: 0 0 0 0;
+          height: 50px;
+          width: 105px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: none;
+        }
+      
+      }
+    }
+  }
+
+  // Details page
+  .roll-single-line {
     input[type=text] {
-      height: 100%;
-      width: 100%;
       padding: 0 6px 0 6px;
-      margin: 0;
+      margin: 0 10px 0 0;
       background: none;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       border: none;
       border-radius: 0px;
       border-bottom: 2px solid black;
     }
-
-    select {
-      margin-left: 6px;
-    }
-
-    .charname {
-      align-items: flex-end;
-      margin: 0 0 10px 0;
-      height: 30px;
-
-      // label {
-
-      // }
-
-      a {
-        flex-grow:0;
-        font-size: 20px;
-        margin: 0 10px 0 10px;;
-      }
-
-      // input {
-
-      // }
-    }
-
-    .roll-box {
     
-      .roll-box-label {
-        height: 30px;
-      }
-    
-      .dice {
-        height: 40px;
-        width: 40px;
-      }
-    
-      .steppers {
-        height: 30px;
-        font-size: small;
-      }
-
-      input[type=number] {
-        border-radius: 5px;
-        border: 2px solid black;
-        margin: 0 0 0 0;
-        height: 50px;
-        width: 105px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: none;
-      }
-    
+    a {
+      flex: none;
+      align-self: end;
     }
   }
- }
+  
+  .quirk {
+    flex: none;
+  }
+
+  .pt-space {
+    margin-bottom: 10px;
+  }
+
+  .roll-multi-line {
+    
+    h3 {
+      margin: 10px 0 0 0;
+    }
+
+    textarea {
+      margin-right: 10px;
+    }
+
+    .interaction, a {
+      flex: none;
+    }
+  }
+
+  .note-block {
+    
+    .editor{
+      border: 2px solid black;
+      height: 400px;
+    }
+  }
 
 }

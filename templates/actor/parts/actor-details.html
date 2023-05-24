@@ -1,68 +1,71 @@
 <div class="flexrow">
-  <div class="flexcol">
+  <div class="flexcol left-column">
     <div class="flexcol">
       <h2>{{localize "STONEBURNER.actor.personalityTraits.title"}}</h2>
-      <div class="flexrow">
-        <input name="" type="text" value=""/>
+      <div class="flexrow roll-single-line pt-space">
+        <input name="system.personalityTraitOne" type="text" value="{{system.personalityTraitOne}}"/>
         <a data-roll-type="" title="" data-item-id=""><i class="fa-regular fa-dice"></i></a>
       </div>
-      <div class="flexrow">
-        <input name="" type="text" value=""/>
+      <div class="flexrow roll-single-line">
+        <input name="system.personalityTraitTwo" type="text" value="{{system.personalityTraitTwo}}"/>
         <a data-roll-type="" title="" data-item-id=""><i class="fa-regular fa-dice"></i></a>
       </div>
     </div>
 
-    <div class="flexcol">
+    <div class="flexcol section-top">
       <h2>{{localize "STONEBURNER.actor.bodyType.title"}}</h2>
-      <div class="flexrow">
-        <input name="" type="text" value=""/>
+      <div class="flexrow roll-single-line">
+        <input name="system.bodyType" type="text" value="{{system.bodyType}}"/>
         <a data-roll-type="" title="" data-item-id=""><i class="fa-regular fa-dice"></i></a>
       </div>
     </div>
 
-    <div class="flexcol">
+    <div class="flexcol roll-multi-line section-top">
       <h2>{{localize "STONEBURNER.actor.backgroundQuestions.title"}}</h2>
       <h3>Question One</h3>
-      {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
+      <textarea name="system.kit.chosenBackground.answerOne" type="text" value="{{system.kit.chosenBackground.answerOne}}" placeholder="Answer">{{system.kit.chosenBackground.answerOne}}</textarea>
       <h3>Question Two</h3>
-      {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
+      <textarea name="system.kit.chosenBackground.answerTwo" type="text" value="{{system.kit.chosenBackground.answerTwo}}" placeholder="Answer">{{system.kit.chosenBackground.answerTwo}}</textarea>
       <h3>Question Three</h3>
-      {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
+      <textarea name="system.kit.chosenBackground.answerThree" type="text" value="{{system.kit.chosenBackground.answerThree}}" placeholder="Answer">{{system.kit.chosenBackground.answerThree}}</textarea>
     </div>
   </div>
   
-  <div class="flexcol">
-    <div class="flexcol">
+  <div class="flexcol right-column">
+
+    <div class="flexcol roll-multi-line quirk">
       <h2>{{localize "STONEBURNER.actor.quirk.title"}}</h2>
       <div class="flexrow">
-        {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
+        <textarea name="system.quirk" type="text" value="{{system.quirk}}" placeholder="Quirk">{{system.quirk}}</textarea>
         <a data-roll-type="" title="" data-item-id=""><i class="fa-regular fa-dice"></i></a>
       </div>
     </div>
 
-    <div class="flexcol">
+    <div class="flexcol roll-multi-line section-top">
       <h2>{{localize "STONEBURNER.actor.look.title"}}</h2>
       <div class="flexrow">
-        {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
-        <div class="flexcol">
+        <textarea name="system.look" type="text" value="{{system.look}}" placeholder="Look">{{system.look}}</textarea>
+        <div class="flexcol interaction">
           <a data-roll-type="" title="" data-item-id=""><i class="fa-regular fa-dice"></i></a>
           <a data-roll-type="" title="" data-item-id=""><i class="fa-solid fa-plus"></i></a>
         </div>
       </div>
     </div>
 
-    <div class="flexcol">
+    <div class="flexcol roll-multi-line section-top">
       <h2>{{localize "STONEBURNER.actor.visionsofGlory.title"}}</h2>
-      {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
-      <div class="flexrow">
-        <span>{{localize "STONEBURNER.actor.button.AdvancementRoll.label"}}</span>
-        <a data-roll-type="" title="" data-item-id=""><i class="fa-regular fa-dice"></i></a>
-      </div>
+      <textarea name="system.visionofGlory" type="text" value="{{system.visionofGlory}}" placeholder="Vision of Glory">{{system.visionofGlory}}</textarea>
     </div>
 
-    <div class="flexcol">
-      <h2>{{localize "STONEBURNER.actor.facets.title"}}</h2>
-      {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
+    <div class="flexrow section-top">
+      <span>{{localize "STONEBURNER.actor.button.AdvancementRoll.label"}}</span>
+      <a data-roll-type="" title="" data-item-id=""><i class="fa-regular fa-dice"></i></a>
     </div>
+
+    <div class="flexcol roll-multi-line section-top">
+      <h2>{{localize "STONEBURNER.actor.facets.title"}}</h2>
+      <textarea name="system.facets" type="text" value="{{system.facets}}" placeholder="Facets">{{system.facets}}</textarea>
+    </div>
+
   </div>
 </div>

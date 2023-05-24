@@ -106,7 +106,7 @@
         </div>
 
         <div class="flexcol right-column">
-          <div class="flexrow rest-actions">
+          <div class="flexrow rest-actions section-top">
             <button type="button" class="">{{localize "STONEBURNER.actor.button.catchYourBreath.label"}}</button>
             <button type="button" class="">{{localize "STONEBURNER.actor.button.rest.label"}}</button>
           </div>
@@ -124,10 +124,14 @@
     {{!-- Projects & Notes Tab --}}
     <div class="tab projects-notes" data-group="primary" data-tab="projects-notes">
       <div class="flexrow">
-        <div class="flexcol">
+        <div class="flexcol left-column">
           {{> "systems/stoneburner/templates/actor/parts/actor-projects.html"}}
         </div>
-        {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
+
+        <div class="flexcol right-column note-block">
+          <h2>{{localize "STONEBURNER.actor.notes"}}</h2>
+          {{editor system.notes target="system.notes" rollData=rollData button=true owner=owner editable=editable}}
+        </div>
       </div>
     </div>
 

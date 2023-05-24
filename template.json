@@ -3,7 +3,7 @@
     "types": ["character", "npc"],
     "templates": {
       "base": {
-        "facets": [],
+        "facets": "",
         "notes": ""
       }
     },
@@ -14,14 +14,17 @@
         "chosenKit": "",
         "chosenBackground": {
           "name": "",
-          "answers": []
+          "answerOne": "",
+          "answerTwo": "",
+          "answerThree": ""
         },
         "chosenAdvancements": []
       },
-      "personalityTraits": [],
+      "personalityTraitOne": "",
+      "personalityTraitTwo": "",
       "bodyType": "",
       "quirk": "",
-      "look": [],
+      "look": "",
       "visionofGlory": "",
       "skills": {
         "strength": {
